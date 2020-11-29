@@ -1,0 +1,35 @@
+.sotial-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  &-item {
+    width: 44px;
+    height: 44px;
+  }
+}
+.sotial-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  &:hover,
+  &:focus {
+    outline: none;
+    border: none;
+    background-color: $blue;
+    border-radius: 50%;
+  }
+  &:hover .sotial-icon,
+  &:focus .sotial-icon {
+    fill: $white;
+  }
+}
+.sotial-icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+}

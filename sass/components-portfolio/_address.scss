@@ -1,0 +1,43 @@
+.addr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $grey;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:focus,
+    &:hover {
+      color: $blue;
+    }
+    &::last-child {
+      margin-right: 0;
+    }
+
+    &:hover .mail-icon,
+    &:hover .tel-icon,
+    &:focus .mail-icon,
+    &:focus .tel-icon {
+      fill: $blue;
+    }
+  }
+}
+.mail-icon {
+  fill: #757575;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+.tel-icon {
+  fill: #757575;
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+}

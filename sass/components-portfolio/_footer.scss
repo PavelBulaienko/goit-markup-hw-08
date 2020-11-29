@@ -1,0 +1,78 @@
+.footer {
+  max-width: 1600px;
+  margin-top: 64px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $dark-bg;
+  margin-left: auto;
+  margin-right: auto;
+
+  .logo {
+    margin-bottom: 20px;
+    margin-right: 0;
+    .stud {
+      color: $white;
+    }
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+
+    &__address {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $white;
+      margin-bottom: 9px;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $transparentwhite;
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }
+    }
+  }
+  &__sotial-title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  .combine-footer {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sotial {
+    &-list {
+      margin: 0;
+      padding: 0;
+    }
+    &-list-item {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-div {
+      padding-top: 12px;
+      margin-left: 70px;
+    }
+    &-icon {
+      fill: $white;
+      width: 20px;
+      height: 20px;
+    }
+    &-link {
+      border: none;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}

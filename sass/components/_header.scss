@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  .combine-nav-addr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

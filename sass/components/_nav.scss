@@ -1,0 +1,45 @@
+.nav-logo-list {
+  display: flex;
+  justify-content: flex-start;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  .nav-item {
+    margin-right: 50px;
+    position: relative;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .studio {
+      color: $blue;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -32px;
+        left: 0;
+        height: 4px;
+        min-width: 48px;
+        border: 1px solid $blue;
+        border-radius: 2px;
+        overflow: visible;
+        background-color: $blue;
+      }
+    }
+  }
+}
+.nav-link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $light-black;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+}

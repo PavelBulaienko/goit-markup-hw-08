@@ -1,0 +1,77 @@
+.footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $dark-bg;
+  .logo .stud {
+    color: $white;
+  }
+  .logo {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .sotial-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  &__address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $white;
+    margin-bottom: 9px;
+  }
+  &__contact-links {
+    display: block;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $transparentwhite;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  &__title-sotial-list {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  .sotial-icon {
+    fill: $white;
+  }
+  .combine-footer {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sotial-div {
+    padding-top: 12px;
+    margin-left: 70px;
+  }
+  .sotial-link {
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    &:hover,
+    &:focus {
+      outline: none;
+      border: none;
+      background-color: $blue;
+      border-radius: 50%;
+    }
+  }
+  .sotial-list-item {
+    margin-right: 10px;
+  }
+  .sotial-list-item:last-child {
+    margin-right: 0;
+  }
+}
