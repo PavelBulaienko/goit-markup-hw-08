@@ -1,16 +1,101 @@
+.menu-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+  &:focus .menu-icon,
+  &:hover .menu-icon {
+    fill: $blue;
+  }
+}
+.menu-button {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.menu-icon {
+  width: 40px;
+  height: 40px;
+}
+.menu-close-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+  &:focus .menu-close-icon,
+  &:hover .menu-close-icon {
+    fill: $blue;
+  }
+}
+.menu-close-icon {
+  width: 40px;
+  height: 40px;
+}
+.menu-thumb {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  padding: 60px 0;
+}
 .nav-logo-list {
   display: flex;
   justify-content: flex-start;
 }
 .nav-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   .nav-item {
-    margin-right: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
     position: relative;
     &:last-child {
-      margin-right: 0;
+      margin-bottom: 60px;
     }
 
     .studio {
@@ -18,7 +103,7 @@
       &::after {
         content: "";
         position: absolute;
-        bottom: -32px;
+        bottom: -8px;
         left: 0;
         height: 4px;
         min-width: 48px;

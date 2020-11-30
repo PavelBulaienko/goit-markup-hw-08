@@ -1,12 +1,12 @@
 .header {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 24px;
-  padding-bottom: 25px;
   .combine-nav-addr {
+    position: relative;
+    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
