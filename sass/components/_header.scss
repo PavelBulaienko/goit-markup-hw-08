@@ -3,6 +3,13 @@
   align-items: center;
   justify-content: flex-start;
   .combine-nav-addr {
+    @media screen and (min-width: 767px) {
+      height: 80px;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
     position: relative;
     height: 60px;
     display: flex;
