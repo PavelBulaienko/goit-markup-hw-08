@@ -1,5 +1,6 @@
 .footer {
-  max-width: 1600px;
+  display: block;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -26,7 +27,7 @@
     margin-bottom: 9px;
   }
   &__contact-links {
-    display: block;
+    display: inline-block;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -50,11 +51,28 @@
   }
   .combine-footer {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .thumb-contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .sotial-div {
     padding-top: 12px;
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .sotial-link {
     border: none;

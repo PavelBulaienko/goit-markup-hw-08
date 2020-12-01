@@ -24,6 +24,9 @@
     position: relative;
     height: 294px;
   }
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 .div-work-description {
   position: absolute;
