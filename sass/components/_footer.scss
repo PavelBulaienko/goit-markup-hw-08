@@ -1,6 +1,6 @@
 .footer {
   display: block;
-  max-width: 1200px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -24,7 +24,8 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $white;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    margin-top: 0;
   }
   &__contact-links {
     display: inline-block;
@@ -59,20 +60,53 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @media screen and (min-width: 768px) {
+        width: 50%;
+      }
+      @media screen and (min-width: 1200px) {
+        width: auto;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        margin-right: 70px;
+      }
     }
     .contacts {
+      margin-bottom: 60px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: nowrap;
     }
   }
   .sotial-div {
-    padding-top: 12px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 1200px) {
+      width: auto;
+      align-items: flex-start;
+      margin-right: 93px;
+      margin-top: 12px;
+    }
   }
   .sotial-link {
     border: none;
