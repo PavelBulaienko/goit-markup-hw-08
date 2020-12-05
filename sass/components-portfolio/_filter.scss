@@ -4,6 +4,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+  }
 
   &-list {
     display: flex;
@@ -39,5 +46,8 @@
   &-item {
     margin-right: 8px;
     margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 }
