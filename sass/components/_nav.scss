@@ -1,5 +1,5 @@
 .menu-button {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
   position: absolute;
@@ -59,6 +59,20 @@
   height: 40px;
 }
 .menu-thumb {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: calc(100% + 15px * 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15px;
+  padding: 60px 0;
   @media screen and (min-width: 767px) {
     display: flex;
     flex-direction: row;
@@ -74,25 +88,13 @@
   @media screen and (min-width: 1200px) {
     justify-content: space-between;
   }
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16),
-    0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
-  background-color: #ffffff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translateY(100%);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   @media screen and (max-width: 767px) {
+    max-width: 480px;
     &.is-hidden {
       opacity: 0;
       pointer-events: none;
     }
   }
-  padding: 60px 0;
 }
 .nav-logo-list {
   display: flex;
@@ -108,21 +110,23 @@
   justify-content: center;
 
   .nav-item {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    position: relative;
     @media screen and (min-width: 768px) {
       margin-right: 50px;
       margin-left: 0;
       margin-bottom: 0px;
+      &:last-child {
+        margin-right: 84px;
+      }
     }
     @media screen and (min-width: 1200px) {
       &:last-child {
         margin-right: 305px;
       }
     }
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
-    position: relative;
-
     .studio {
       bottom: 0;
       color: $blue;
@@ -132,7 +136,7 @@
         bottom: -8px;
         left: 0;
         height: 4px;
-        min-width: 48px;
+        min-width: 60px;
         border: 1px solid $blue;
         border-radius: 2px;
         overflow: visible;
@@ -140,6 +144,7 @@
       }
       @media screen and (min-width: 768px) {
         &::after {
+          min-width: 48px;
           bottom: -32px;
         }
       }
@@ -149,10 +154,13 @@
 .nav-link {
   display: block;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $light-black;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 
   &:hover,
   &:focus {

@@ -162,7 +162,7 @@ img {
           align-items: center;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -233,7 +233,7 @@ img {
   left: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  width: 100%;
+  width: calc(100% + 15px * 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,9 +249,13 @@ img {
           align-items: center;
   z-index: 3;
   padding: 60px 0;
+  margin-left: -15px;
 }
 
 @media screen and (max-width: 767px) {
+  .menu-thumb {
+    max-width: 480px;
+  }
   .menu-thumb.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -444,6 +448,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .addr-link {
+    margin-bottom: 10px;
     font-size: 12px;
   }
 }
@@ -931,18 +936,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0;
   padding-bottom: 30px;
   padding-left: 32px;
   padding-right: 32px;
 }
 
 .sotial-list-item {
+  margin-right: 10px;
   width: 44px;
   height: 44px;
+}
+
+.sotial-list-item:last-child {
+  margin-right: 0;
 }
 
 .sotial-link {

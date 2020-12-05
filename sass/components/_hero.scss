@@ -18,6 +18,9 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero/overlay_mobile.jpg");
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -84,5 +87,9 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      max-width: 700px;
+    }
   }
 }
