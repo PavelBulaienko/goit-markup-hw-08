@@ -22,7 +22,7 @@
   }
   &__img {
     position: relative;
-    height: 294px;
+    width: calc((100% - 30px * 2) / 3);
   }
   @media screen and (max-width: 1199px) {
     display: none;
