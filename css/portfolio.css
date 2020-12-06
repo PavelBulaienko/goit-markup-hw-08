@@ -68,6 +68,7 @@ img {
 }
 
 .header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +85,6 @@ img {
 }
 
 .header .combine-nav-addr {
-  position: relative;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +95,14 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media screen and (max-width: 767px) {
+  .header .combine-nav-addr {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -137,6 +145,12 @@ img {
 
 .logo .stud {
   color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .buttons-menu {
+    position: relative;
+  }
 }
 
 .menu-button {
@@ -229,11 +243,9 @@ img {
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
   background-color: #ffffff;
   position: absolute;
-  bottom: 0;
+  top: 60px;
   left: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  width: calc(100% + 15px * 2);
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,12 +261,11 @@ img {
           align-items: center;
   z-index: 3;
   padding: 60px 0;
-  margin-left: -15px;
 }
 
 @media screen and (max-width: 767px) {
   .menu-thumb {
-    max-width: 480px;
+    max-width: 100%;
   }
   .menu-thumb.is-hidden {
     opacity: 0;
